@@ -24,7 +24,7 @@ This project was created as a frontend practice project to understand how JavaSc
 
 ## 🎯 Discount Rule
 
-CartSim currently applies a **10% discount** when the subtotal reaches:
+Habung currently applies a **10% discount** when the subtotal reaches:
 
 ```text
 Rp500.000
@@ -122,7 +122,7 @@ This helped me understand a basic concept that is commonly used in modern fronte
 ## 📂 Project Structure
 
 ```text
-cartsim/
+habung/
 │
 ├── index.html
 ├── style.css
@@ -141,7 +141,7 @@ git clone https://github.com/devlin-25/habung.git
 Open the project folder:
 
 ```bash
-cd cartsim
+cd habung
 ```
 
 Then open `index.html` in your browser.
