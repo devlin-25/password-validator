@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pass! - Create Your Secure Password</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Pass!</h1>
+    <p>Create secure password with Online Password Validator</p>
+
+    <label for="password">Password </label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Input your password here .."
+    />
+
+    <button id="validatedBtn">Validate Password</button>
+
+    <div class="indicator" hidden>
+      
+    </div>
+
+    <div class="password-indicator">
+      <p>Password harus memiliki:</p>
+      <span id="length">✗ Minimal 8 Karakter</span>
+      <span id="uppercase">✗ Minimal 1 Huruf Kapital</span>
+      <span id="lowercase">✗ Minimal 1 Huruf Kecil</span>
+      <span id="number">✗ Minimal 1 Angka</span>
+      <span id="special">✗ Minimal 1 Karakter Spesial</span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

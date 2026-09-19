@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+    --background: #f8fafc;
+    --card: #ffffff;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --success: #16a34a;
+    --danger: #dc2626;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+body > * {
+    width: 100%;
+    max-width: 500px;
+}
+
+h1{
+    margin-bottom: 8px;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -2px;
+
+    color: var(--text);
+}
+h1::first-letter{
+    color: var(--primary);
+}
+
+h1+p{
+    margin-bottom:32px;
+    color:var(--muted);
+    font-size:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+}
+
+input{
+    width:100%;
+    height:52px;
+    padding: 0 16px;
+    border-radius: 12px;
+
+    background: var(--card);
+    color:var(--text);
+    font-size: 15px;
+    outline: none;
+
+    transition: border-color 0.2 ease, box-shadow 0.2s ease;
+}
+
+input::placeholder{
+    color:#94a3b8;
+}
+
+input:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+button{
+    width:100%;
+    height:50px;
+
+    margin-top:14px;
+
+    border:none;
+    border-radius:12px;
+
+    background:var(--primary);
+    color:white;
+    
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+button:hover{
+    background: var(--primary-dark);
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+#message{
+    margin-top: 16px;
+    font-size:14px;
+    font-weight: 600;
+}
+
+.password-indicator{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:24px;
+    padding: 20px;
+
+    background: var(--card);
+    border:1px solid var(--border);
+    border-radius: 16px;
+}
+
+.password-indicator p{
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight:700;
+}
+
+.password-indicator span{
+    font-size:14px;
+    color: var(--muted);
+
+    transition: color 0.2 ease, transform 0.2s ease;
+}
+
+.valid {
+    background:#F2F2F2;
+     margin-top:16px;
+    color: var(--success) !important;
+    padding:16px;
+    border: 1px solid var(--success);
+    border-radius: 16px;
+}
+
+.invalid {
+    background:#FFF5F8;
+    margin-top:16px;
+    color: var(--danger) !important;
+    padding:16px;
+    border: 1px solid var(--danger);
+    border-radius: 16px;
+}
